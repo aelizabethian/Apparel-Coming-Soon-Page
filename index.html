@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- displays site properly based on user's device -->
 
     <link
@@ -26,50 +29,62 @@
         font-size: 11px;
         text-align: center;
       }
-     
     </style>
   </head>
   <body>
-<header class="header">
-  <img class="logo" src="./images/logo.svg" alt="logo">
-</header>
-  <main class="text">
-    <div>
-      <img class="mobileImg" src="./images/hero-mobile.jpg" alt="woman model">
-    </div>
-    <div>
-    <h1 class="headingText">
-      <span class="font1">We're</span> 
-      <span class="font2">coming </span>
-      <span class="font3">soon</span></h1>
-    </div>
+    <header class="header">
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+    </header>
+    <main class="text">
+      <div>
+        <img
+          class="mobileImg"
+          src="./images/hero-mobile.jpg"
+          alt="woman model"
+        />
+      </div>
+      <div>
+        <h1 class="headingText">
+          <span class="font1">We're</span>
+          <span class="font2">coming </span>
+          <span class="font3">soon</span>
+        </h1>
+      </div>
 
-    <div class="intro">
-      <p>Hello fellow shoppers! We're currently building our new
-      fashion store. Add your email below to stay up-to-date with announcements
-      and our launch deals.</p>
+      <div class="intro">
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+      </div>
+      <div class="inputEl">
+        <form method="post" action="/">
+          <input class="input" type="text" placeholder="Email Address" />
+          <img
+            class="errorImg"
+            src="./images/icon-error.svg"
+            alt="error indicator"
+          />
+          <button class="circle" type="submit"></button>
+        </form>
+      </div>
+    </main>
+    <div class="desktopImg">
+      <img
+        class="deskImg"
+        src="./images/hero-desktop.jpg"
+        alt="woman in apparel"
+      />
     </div>
-    <div class="inputEl">
-    <form method='post' action="/">
-    <input class="input" type="text" placeholder="Email Address">
-    <img class="errorImg" src="./images/icon-error.svg" />
-    <button class="circle" type=submit></button>
-  </form>
-</div>
-  </main>
-  <div class="desktopImg">
-    <img class="deskImg" src="./images/hero-desktop.jpg" alt="woman in apparel">
-  </div>
     <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by Amanda Richardson</a>.
+        >. Coded by Amanda Richardson
       </p>
     </footer>
     <script src="app.js"></script>
   </body>
 </html>
-
-
