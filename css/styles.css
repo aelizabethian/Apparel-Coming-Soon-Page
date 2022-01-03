@@ -1,0 +1,283 @@
+*,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+  background: linear-gradient(hsl(0, 50%, 100%), hsl(0, 100%, 98%));
+  padding-top: 35px;
+  display: grid;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 8%;
+  margin-bottom: 30px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.mobileImg {
+  grid-row: -1/2;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: block;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.font1 {
+  font-weight: 300;
+}
+
+.font2,
+.font3 {
+  color: hsl(0, 6%, 24%);
+}
+
+.intro {
+  font-size: 14px;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+.intro p {
+  padding: 2px;
+}
+
+form {
+  max-width: 350px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.input {
+  width: 90%;
+  background: none;
+  height: 48px;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 30px;
+  opacity: 0.7;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  transition: 0.2s ease-in;
+  position: relative;
+}
+
+.input:focus {
+  outline: none;
+  background-color: white;
+}
+
+.errorImg {
+  width: 30px;
+  position: absolute;
+  top: 12%;
+  right: 30%;
+  z-index: 5;
+  display: none;
+}
+
+.circle {
+  width: 65px;
+  height: 48px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  position: absolute;
+  right: 5%;
+  top: 0;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 2px 6px 15px 1.1px rgba(182, 101, 101, 0.3);
+}
+
+.circle::after {
+  content: " ";
+  width: 25px;
+  height: 25px;
+  background: url("../images/icon-arrow.svg") no-repeat;
+  position: absolute;
+  top: 30%;
+  right: 15%;
+}
+
+.arrow {
+  width: 13px;
+  position: absolute;
+  top: 18%;
+  right: 16%;
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: 0.5;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 9px;
+  padding-bottom: 200px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 6%, 24%);
+}
+
+.desktopImg {
+  display: none;
+}
+
+.circle:active,
+.circle:focus,
+.circle:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1280px) {
+  body {
+    background: url("../images/bg-pattern-desktop.svg");
+    background-position: cover;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 0;
+  }
+
+  .desktopImg {
+    grid-column: 2/-1;
+    grid-row: -3/-1;
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 150px;
+    padding-right: 10%;
+    transform: 0.5s ease-out;
+  }
+
+  .intro {
+    margin-left: 0;
+    line-height: 2;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .text {
+    padding-right: 20%;
+    max-width: 1000px;
+  }
+
+  header {
+    padding-top: 8%;
+  }
+
+  .logo {
+    width: 150px;
+    margin-left: 150px;
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 48px;
+    text-align: left;
+    letter-spacing: 4;
+    margin-top: -85px;
+    max-width: 100px;
+    transform: 2s ease-out;
+  }
+
+  form {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 500px;
+  }
+
+  .input {
+    margin: 0 10px;
+    margin-left: 0;
+    width: 85%;
+    height: 55px;
+    position: relative;
+  }
+
+  .inputEl {
+    grid-column: 1/2;
+    grid-row: 3/-3;
+    margin-bottom: 15px;
+  }
+
+  .errorImg {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32%;
+    z-index: 5;
+  }
+
+  .circle {
+    width: 75px;
+    height: 55px;
+    right: 10%;
+  }
+
+  .circle::after {
+    right: 20%;
+  }
+
+  .mobileImg {
+    display: none;
+  }
+
+  footer {
+    margin-top: -150px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 58px;
+  }
+
+  .text {
+    padding-right: 32%;
+  }
+
+  .circle {
+    width: 95px;
+  }
+
+  .circle::after {
+    top: 30%;
+    right: 20%;
+  }
+}
